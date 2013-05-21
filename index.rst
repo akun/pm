@@ -20,6 +20,7 @@
 
    intro/index
    vsc/index
+   codereview/index
    unittest/index
    doc/index
    construction/index
