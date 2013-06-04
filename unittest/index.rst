@@ -6,23 +6,15 @@
    :maxdepth: 2
 
    hello.rst
-
-以Python为例
-------------
-
-以Django为例
-------------
-
-以JavaScript为例
-----------------
+   python.rst
+   django.rst
+   javascript.rst
+   mock.rst
 
 持续集成，以Bitten为例
 ----------------------
 
 更多详见持续输出章节
-
-Mock和Fake的场景举例
---------------------
 
 其它编程语言的单元测试简介（可选）
 ----------------------------------
