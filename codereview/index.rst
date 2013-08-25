@@ -1,8 +1,9 @@
 代码审查
 ========
 
-方式
-----
+.. toctree::
+   :maxdepth: 2
 
-工具
-----
+   howto
+   pylint
+   plugin
