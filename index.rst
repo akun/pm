@@ -28,6 +28,7 @@
    process/index
    meeting/index
    note/index
+   tao/index
    reference/index
    contribute/index
    changelog/index
