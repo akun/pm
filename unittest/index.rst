@@ -5,11 +5,11 @@
 .. toctree::
    :maxdepth: 2
 
-   hello.rst
-   python.rst
-   django.rst
-   javascript.rst
-   mock.rst
+   hello
+   python
+   django/index
+   javascript
+   mock
 
 持续集成，以Bitten为例
 ----------------------
