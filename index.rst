@@ -19,7 +19,7 @@
    :maxdepth: 2
 
    intro/index
-   vsc/index
+   vcs/index
    codereview/index
    unittest/index
    doc/index
