@@ -3,8 +3,8 @@
 
 Version Control System
 
-以SVN为例
----------
+.. toctree::
+   :maxdepth: 2
 
-以Git为例
----------
+   svn/index
+   git/index
