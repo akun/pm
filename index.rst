@@ -6,6 +6,8 @@
 软件构建实践 |version|
 ======================
 
+项目地址：https://github.com/akun/pm
+
 注意
 ----
 
