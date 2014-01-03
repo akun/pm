@@ -3,5 +3,7 @@
 
 文档也是代码！
 
-以Sphinx为例
-------------
+.. toctree::
+   :maxdepth: 2
+
+   sphinx
