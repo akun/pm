@@ -1,2 +1,2 @@
-rst2pdf==0.93.dev
-hieroglyph==0.6.5.dev
+rst2pdf
+hieroglyph
