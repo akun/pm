@@ -5,4 +5,5 @@
    :maxdepth: 2
 
    usage
+   usage_admin
    management
