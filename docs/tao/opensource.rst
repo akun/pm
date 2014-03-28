@@ -60,7 +60,7 @@ Coveralls：https://coveralls.io/
 
 Read the Docs：https://readthedocs.org/
 
-也是可以GitHub帐号统一注册登录。
+这个帐号不能像上面一样用GitHub帐号通用得注册登录了，需要自己单独注册一个。
 
 项目的文档只是得用Sphinx编写（对Python项目而言，Sphinx这个算是标配工具了），就可以很好的用这个服务了。
 
