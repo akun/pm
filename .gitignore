@@ -1,2 +1,7 @@
 *.swp
 _build
+bin
+build
+include
+lib
+local
