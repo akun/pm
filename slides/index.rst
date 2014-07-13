@@ -5,3 +5,4 @@ Slides目录
    :maxdepth: 1
 
    git_part1
+   subversion2git
