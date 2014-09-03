@@ -5,8 +5,7 @@
 用Sphinx编写技术文档
 ====================
 
-大家会发现，如果一个项目主要是用Python写的，其文档都很类似，比如：Python在线的HTML官方手册。这些项目的文档都来源于一个很不错的项目：Sphinx。
-这个Sphinx特指Sphinx doc这个项目（另一个也叫Sphinx的search的项目，虽然都叫一个名字）。
+大家会发现，如果一个项目主要是用Python写的，其文档都很类似，比如：Python在线的HTML官方手册。这些项目的文档都来源于一个很不错的项目：Sphinx。这个Sphinx特指Sphinx doc这个项目（另一个也叫Sphinx的search的项目，虽然都叫一个名字）。
 
 官网：http://sphinx-doc.org/
 
@@ -38,7 +37,7 @@
 就是rst的语法，这里就列举几个常用的：
 
 标题等级
-^^^^^^^^
+~~~~~~~~
 
 rst如下：
 
@@ -68,7 +67,7 @@ rst如下：
 习惯上，可以用以下字符：“= - ` : ' " ~ ^ _ * + # < >”。最好能约定个依次标题等级。
 
 列表
-^^^^
+~~~~
 
 rst如下：
 
@@ -103,7 +102,7 @@ rst如下：
 #. 列表3
 
 表格
-^^^^
+~~~~
 
 rst如下：
 
@@ -128,7 +127,7 @@ rst如下：
 =====  =====  =====
 
 插入图片
-^^^^^^^^
+~~~~~~~~
 
 rst如下：
 
@@ -141,7 +140,7 @@ rst如下：
 .. image:: images/ball1.gif
 
 插入代码
-^^^^^^^^
+~~~~~~~~
 
 展示代码示例，经常会用到：
 
@@ -161,7 +160,6 @@ rst如下：
 ::
 
    print 'Hello World!'
-
 
 自定义
 """"""
@@ -200,7 +198,7 @@ rst如下：
    :linenos:
 
 提供下载文件链接
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 直接下载该RST本身。
 
@@ -215,7 +213,7 @@ rst如下：
 :download:`sphinx.rst <sphinx.rst>`
 
 目录索引
-^^^^^^^^
+~~~~~~~~
 
 example1对应sphinx.rst所在目录下的example1.rst文件，example2类似。
 
@@ -238,7 +236,7 @@ rst如下：
    example2
 
 引用
-^^^^
+~~~~
 
 可以用于跨rst文档间的内容互相引用。这里以本文档内为例。
 
@@ -260,7 +258,7 @@ rst如下：
 点击回到顶部， :ref:`my-reference-label`.
 
 文字效果
-^^^^^^^^
+~~~~~~~~
 
 斜体
 """"
@@ -327,7 +325,7 @@ Hello World
 根据上面的介绍，其实常用的语法不多，现在直接用下，自己感受下吧！
 
 安装 & 初始化
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 常用Python安装方式，创建个文件夹，执行命令，按提示自己选择即可。
 
@@ -341,7 +339,7 @@ Hello World
 根据提示输入相应参数即可，可以一路默认。
 
 尝试编辑
-^^^^^^^^
+~~~~~~~~
 
 编辑index.rst，只写入以下内容
 
@@ -354,7 +352,7 @@ Hello World
    --------
 
 生成HTML
-^^^^^^^^
+~~~~~~~~
 
 很简单，默认支持就很好。
 
@@ -366,23 +364,23 @@ Hello World
 直接浏览器访问9527端口，就可以看到类似Python官方文档的效果。
 
 生成PDF
-^^^^^^^
+~~~~~~~
 
 麻烦些，需要依赖库，且需要简单修改下配置。
 
-1. 安装依赖库
+#. 安装依赖库
 
 ::
 
    pip install rst2pdf
 
-2. 编辑conf.py，增加或修改如下配置：
+#. 编辑conf.py，增加或修改如下配置：
 
 .. literalinclude:: code/pdf.py
    :language: python
    :linenos:
 
-3. 编辑Makefile，增加如下代码：
+#. 编辑Makefile，增加如下代码：
 
 Linux下的Makefie：
 
@@ -394,7 +392,7 @@ Windows下的批处理：
 .. literalinclude:: code/pdf.bat
    :linenos:
 
-4. 执行生成PDF
+#. 执行生成PDF
 
 ::
 
@@ -406,30 +404,30 @@ Windows下的批处理：
    有关PDF的更多配置，可以阅读这个文档：http://ralsina.me/static/manual.pdf
 
 生成Slide
-^^^^^^^^^
+~~~~~~~~~
 
 Slide就是我们常说的演示文档，如：Windows下的PowerPoint（PPT）；Mac下Keynote等等。这里用Sphinx生成在线的HTML5形式的Slide，操作也相对简单，也是需要依赖库和简单修改下配置。
 
-1. 安装依赖库
+#. 安装依赖库
 
 ::
 
    pip install hieroglyph
 
-2. 编辑conf.py，修改如下配置：
+#. 编辑conf.py，修改如下配置：
 
 .. literalinclude:: code/slides.py
    :language: python
    :linenos:
 
-3. 编辑Makefile，增加如下代码：
+#. 编辑Makefile，增加如下代码：
 
 Linux下的Makefie：
 
 .. literalinclude:: code/slides.Makefile
    :linenos:
 
-4. 执行生成Slides
+#. 执行生成Slides
 
 ::
 
@@ -441,23 +439,23 @@ Linux下的Makefie：
    有关Slide的更多信息，可以直接查看这个项目：https://github.com/nyergler/hieroglyph
 
 自定义样式
-^^^^^^^^^^
+~~~~~~~~~~
 
 直接拿来主义，直接用别人写的Trac的样式
 
-1. 复制样式文件到静态资源目录，比如，这里是：
+#. 复制样式文件到静态资源目录，比如，这里是：
 
 ::
 
    cp tracsphinx.css _static/
 
-2. 编辑conf.py，增加或修改如下配置：
+#. 编辑conf.py，增加或修改如下配置：
 
 .. literalinclude:: code/style.py
    :language: python
    :linenos:
 
-3. 执行生成HTML
+#. 执行生成HTML
 
 ::
 
@@ -467,7 +465,7 @@ Linux下的Makefie：
 直接浏览器访问9527端口，就可以看到类似Trac的官方样式效果。
 
 汇总到一块
-^^^^^^^^^^
+~~~~~~~~~~
 
 可以直接看Python项目模板：https://github.com/akun/aproject/\ 只看docs目录即可。
 
