@@ -12,6 +12,9 @@ html:
 slide:
 	cd $(SLIDE_DIR) && $(MAKE) slides
 
+ui:
+	cd $(DOC_DIR) && python -m SimpleHTTPServer
+
 clean:
 	cd $(DOC_DIR) && $(MAKE) clean
 	cd $(SLIDE_DIR) && $(MAKE) clean
