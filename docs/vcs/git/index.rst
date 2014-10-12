@@ -7,4 +7,4 @@
    contrastive
    usage
    management
-   migrate
+   subversion2git
