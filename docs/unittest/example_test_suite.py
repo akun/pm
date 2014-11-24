@@ -41,7 +41,7 @@ def suite_add_one_test():
     return suite
 
 def suite_use_test_loader():
-    """想用TestLoader方式把测试加到TestSuite的死后可以这样用
+    """想用TestLoader方式把测试加到TestSuite的时候可以这样用
 
     """
 
