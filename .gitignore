@@ -1,7 +1,10 @@
+*.egg-info
+*.pyc
 *.swp
 _build
 bin
 build
+dist
 include
 lib
 local

@@ -13,8 +13,13 @@ Scons
 Ant
 ---
 
-Python模块发布
---------------
+Python 模块发布
+---------------
+
+.. toctree::
+   :maxdepth: 2
+
+   namespace
 
 Distutils
 ^^^^^^^^^
