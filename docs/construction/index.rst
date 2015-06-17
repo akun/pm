@@ -7,6 +7,9 @@ Shell
 Make
 ----
 
+Fabric
+------
+
 Scons
 -----
 
@@ -32,3 +35,6 @@ easy_install
 
 pip install
 ^^^^^^^^^^^
+
+用 devpi 搭建私有的 PyPI 服务
+-----------------------------
