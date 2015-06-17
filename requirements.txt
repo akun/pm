@@ -1,2 +1,1 @@
-rst2pdf==0.93
 hieroglyph==0.7.1
