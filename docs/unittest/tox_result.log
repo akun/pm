@@ -1,0 +1,41 @@
+GLOB sdist-make: /home/yourname/projects/pm/pm/onepiece/setup.py                                                                                                     [0/4158]
+py27 create: /home/yourname/projects/pm/pm/onepiece/.tox/py27
+py27 installdeps: coverage, httpretty, nose
+py27 inst: /home/yourname/projects/pm/pm/onepiece/.tox/dist/onepiece-0.1.0.zip
+py27 installed: coverage==4.5,future==0.16.0,httpretty==0.8.14,nose==1.3.7,onepiece==0.1.0,pkg-resources==0.0.0
+py27 runtests: PYTHONHASHSEED='3715476856'
+py27 runtests: commands[0] | nosetests -c nose.cfg
+..海贼王（One Piece）
+...
+Name                   Stmts   Miss  Cover
+------------------------------------------
+onepiece/__init__.py       1      0   100%
+onepiece/main.py          22      0   100%
+------------------------------------------
+TOTAL                     23      0   100%
+----------------------------------------------------------------------
+Ran 5 tests in 0.061s
+
+OK
+py3 create: /home/yourname/projects/pm/pm/onepiece/.tox/py3
+py3 installdeps: coverage, httpretty, nose
+py3 inst: /home/yourname/projects/pm/pm/onepiece/.tox/dist/onepiece-0.1.0.zip
+py3 installed: coverage==4.5,future==0.16.0,httpretty==0.8.14,nose==1.3.7,onepiece==0.1.0,pkg-resources==0.0.0
+py3 runtests: PYTHONHASHSEED='3715476856'
+py3 runtests: commands[0] | nosetests -c nose.cfg
+..海贼王（One Piece）
+...
+Name                   Stmts   Miss  Cover
+------------------------------------------
+onepiece/__init__.py       1      0   100%
+onepiece/main.py          22      0   100%
+------------------------------------------
+TOTAL                     23      0   100%
+----------------------------------------------------------------------
+Ran 5 tests in 0.034s
+
+OK
+_______________________________________________________________________________ summary ________________________________________________________________________________
+  py27: commands succeeded
+  py3: commands succeeded
+  congratulations :)

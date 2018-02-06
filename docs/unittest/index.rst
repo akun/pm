@@ -7,6 +7,7 @@
 
    hello
    python
+   py2_py3_with_tox
    django/index
    javascript
    mock
