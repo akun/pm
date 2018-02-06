@@ -1,6 +1,9 @@
 *.egg-info
 *.pyc
 *.swp
+*env
+.coverage
+.tox
 _build
 bin
 build
