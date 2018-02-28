@@ -1,0 +1,48 @@
+GLOB sdist-make: /home/kun/projects/pm/pm/onepiece/setup.py
+py27 inst-nodeps: /home/kun/projects/pm/pm/onepiece/.tox/dist/onepiece-0.1.0.zip
+py27 installed: coverage==4.5.1,future==0.16.0,httpretty==0.8.14,nose==1.3.7,onepiece==0.1.0,pkg-resources==0.0.0
+py27 runtests: PYTHONHASHSEED='1283052189'
+py27 runtests: commands[0] | nosetests -c nose.cfg
+...E..
+======================================================================
+ERROR: test_do_print_example (tests.test_main.MainTestCase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kun/projects/pm/pm/onepiece/tests/test_main.py", line 16, in test_do_print_example
+    text = main.do_print_example()
+  File "/home/kun/projects/pm/pm/onepiece/onepiece/main.py", line 15, in do_print_example
+    print(text)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+
+Name                   Stmts   Miss  Cover
+------------------------------------------
+onepiece/__init__.py       1      0   100%
+onepiece/example.py        2      0   100%
+onepiece/main.py          22      0   100%
+------------------------------------------
+TOTAL                     25      0   100%
+----------------------------------------------------------------------
+Ran 6 tests in 0.097s
+
+FAILED (errors=1)
+ERROR: InvocationError: '/home/kun/projects/pm/pm/onepiece/.tox/py27/bin/nosetests -c nose.cfg'
+py3 inst-nodeps: /home/kun/projects/pm/pm/onepiece/.tox/dist/onepiece-0.1.0.zip
+py3 installed: coverage==4.5,future==0.16.0,httpretty==0.8.14,nose==1.3.7,onepiece==0.1.0,pkg-resources==0.0.0
+py3 runtests: PYTHONHASHSEED='1283052189'
+py3 runtests: commands[0] | nosetests -c nose.cfg
+......
+Name                   Stmts   Miss  Cover
+------------------------------------------
+onepiece/__init__.py       1      0   100%
+onepiece/example.py        2      0   100%
+onepiece/main.py          22      0   100%
+------------------------------------------
+TOTAL                     25      0   100%
+----------------------------------------------------------------------
+Ran 6 tests in 0.056s
+
+OK
+海贼王（One Piece）
+___________________________________ summary ____________________________________
+ERROR:   py27: commands failed
+  py3: commands succeeded

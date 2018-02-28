@@ -22,6 +22,7 @@ Python 模块发布
 .. toctree::
    :maxdepth: 2
 
+   build_opensource
    namespace
 
 Distutils
